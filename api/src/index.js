@@ -1,6 +1,6 @@
 const { PORT, ENV } = require('./config/vars');
-const app = require('./config/express');
+const server = require('./config/server');
 
-app.listen(PORT, () => console.info(`server started on port ${PORT} (${ENV})`));
+server.listen(PORT, () => console.info(`server started on port ${PORT} (${ENV})`));
 
-module.exports = app;
+module.exports = server;
